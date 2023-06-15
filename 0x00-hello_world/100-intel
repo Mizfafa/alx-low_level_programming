@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Get the output file name by replacing the .c extension with .s
+output_file="${CFILE%.c}.s"
+
+# Compile the C file with the -S and -masm=intel options to generate assembly code in Intel syntax
+gcc -S -masm=intel "$CFILE" -o "$output_file"
