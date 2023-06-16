@@ -1,2 +1,2 @@
 #!/bin/bash
-CFILE=$1 OUTPUT=${CFILE%.c}.s gcc -S -masm=intel $CFILE -o $OUTPUT
+gcc -S -masm=Intel  $CFILE
